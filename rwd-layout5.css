@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1250px) {
+    .list {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 45%;
+    }
+}
+@media only screen and(max-width:500px) {
+    .headline {
+        font-size: 20px;
+    }
+
+    .desktop-menu {
+        text-align: center;
+        display: none;
+    }
+
+    .mobil-menu {
+        text-align: center;
+        display: block
+    }
+
+    .item1 {
+        width: 90%
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap:10px;
+}
+.item{
+    background: violet;
+    padding: 10px;
+    text-align: center;
+}
