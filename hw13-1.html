@@ -8,21 +8,49 @@
 <body>
     <script>
         var X=prompt("輸入成績","");
-        if(X >= 80){
+        if(X<=100&&X >= 90){
+            console.log("A+!");
+            window.alert("A+!");   
+        }
+        else if(X<= 89&&X >= 85){
             console.log("A!");
             window.alert("A!");   
         }
-        else if(X<= 79&&X >= 70){
+        else if(X<= 84&&X >= 80){
+            console.log("A-!");
+            window.alert("A-!");   
+        }
+        else if(X<= 79&&X >= 77){
+            console.log("B+!");
+            window.alert("B+!");   
+        }
+        else if(X<= 76&&X >= 73){
             console.log("B!");
             window.alert("B!");   
         }
-        else if(X <= 69&&X >= 60){
+        else if(X <= 72&&X >= 70){
+            console.log("B-!");
+            window.alert("B-!");   
+        }
+        else if(X <= 69&&X >= 67){
+            console.log("C+!");
+            window.alert("C+!");   
+        }
+        else if(X <= 66&&X >= 63){
             console.log("C!");
             window.alert("C!");   
+        }
+        else if(X <= 62&&X >= 60){
+            console.log("C-!");
+            window.alert("C-!");   
         }
         else if(X <= 59&&X >= 50){
             console.log("D!");
             window.alert("D!");   
+        }
+        else if(X <= 49&&X >= 1){
+            console.log("E!");
+            window.alert("E!");   
         }
         else{
             console.log("X!");
