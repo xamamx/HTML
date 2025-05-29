@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="changetoabout()">關於我</button>
+        <span onclick="changetoexps();">學經歷</span>
+    </div>
+    <br/>
+    <div id="about" style="display: none;">大家好，我是楊士鋒</div>
+    <div id="exps" style="display: none">我是南台科技大學資工系學生</div>
+    <script>
+        function changetoabout(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            expsDiv.style.display="none";
+            aboutDiv.style.display="block";
+        }
+        function changetoexps(){
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps");
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block";
+        }
+    </script>
+</body>
+</html>
